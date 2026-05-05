@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EL7CZN9MRR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-EL7CZN9MRR');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>職場法律課程 | 實體戰略課 - Eva 老師專業授課</title>
+    <meta name="description" content="掌握職場法律防禦學！由 Eva 老師親自授課。">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        british: {
+                            green: '#0F2F24',
+                            gold: '#C5A059',
+                            cream: '#F9F8F2',
+                            text: '#2D2D2D',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #F9F8F2;
+            color: #2D2D2D;
+            scroll-behavior: smooth;
+        }
+        .serif-title { font-family: 'Noto Serif TC', serif; }
+        .heading-decorator { border-left: 6px solid #C5A059; padding-left: 1.25rem; }
+        
+        .q-mark-visual {
+            color: #C5A059 !important;
+            text-shadow: 2px 2px 0px #000;
+            font-family: 'Noto Serif TC', serif;
+            font-weight: 900;
+            font-style: italic;
+        }
+
+        .question-textarea {
+            font-family: 'Noto Serif TC', serif !important;
+            line-height: 2.2 !important;
+            letter-spacing: 0.05em;
+        }
+
+        .custom-select-wrapper { position: relative; }
+        .custom-select-wrapper::after {
+            content: '\f107';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #C5A059;
+            pointer-events: none;
+        }
+        /* 隱藏原生滾動條但保留功能 */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-british-cream antialiased" id="top">
+
+    <!-- 導覽列 -->
+    <nav id="main-nav" class="bg-british-green py-4 px-6 shadow-lg sticky top-0 z-[100] border-b border-british-gold/20">
+        <div class="container mx-auto max-w-6xl flex justify-between items-center font-bold relative">
+            <a href="#top" class="flex items-center hover:opacity-80 transition">
+                <img src="https://drive.google.com/thumbnail?id=1xrhrHTWGHnMbwGZFFAQPFEWaKeDDdBlQ&sz=w400" alt="Logo" class="h-10 w-auto">
+            </a>
+            
+            <div class="flex items-center gap-4 md:gap-6">
+                <!-- 漢堡選單按鈕 (3條線) -->
+                <button onclick="toggleNavMenu()" class="text-british-gold hover:text-white transition-colors text-2xl focus:outline-none p-1" aria-label="打開導覽選單">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <!-- 立即報名按鈕 -->
+                <button onclick="openRegisterModal()" class="bg-british-gold text-british-green px-6 md:px-8 py-2.5 rounded-sm font-black text-sm tracking-widest hover:bg-white transition-all shadow-xl active:scale-95 uppercase whitespace-nowrap hidden md:block">
+                    立即報名
+                </button>
+            </div>
+
+            <!-- 下拉選單 (點擊漢堡按鈕後顯示) -->
+            <div id="nav-dropdown" class="absolute top-[130%] right-0 w-48 bg-white border border-british-gold/20 rounded-xl shadow-2xl py-2 hidden opacity-0 transition-all duration-300 transform origin-top-right scale-95 z-[110]">
+                <a href="#introduction" onclick="toggleNavMenu()" class="block px-5 py-3 text-british-green hover:bg-british-gold/10 hover:text-british-gold font-bold text-sm transition-colors"><i class="fa-solid fa-book-open w-5 text-center mr-1"></i> 課程介紹</a>
+                <a href="#target-audience" onclick="toggleNavMenu()" class="block px-5 py-3 text-british-green hover:bg-british-gold/10 hover:text-british-gold font-bold text-sm transition-colors"><i class="fa-solid fa-users-viewfinder w-5 text-center mr-1"></i> 適合對象</a>
+                <a href="#core-curriculum" onclick="toggleNavMenu()" class="block px-5 py-3 text-british-green hover:bg-british-gold/10 hover:text-british-gold font-bold text-sm transition-colors"><i class="fa-solid fa-star w-5 text-center mr-1"></i> 課程重點</a>
+                <a href="#course-highlight" onclick="toggleNavMenu()" class="block px-5 py-3 text-british-green hover:bg-british-gold/10 hover:text-british-gold font-bold text-sm transition-colors"><i class="fa-solid fa-gem w-5 text-center mr-1"></i> 獨家實戰</a>
+                <a href="#expected-benefits" onclick="toggleNavMenu()" class="block px-5 py-3 text-british-green hover:bg-british-gold/10 hover:text-british-gold font-bold text-sm transition-colors"><i class="fa-solid fa-chart-line w-5 text-center mr-1"></i> 預期效益</a>
+                <a href="#feedback" onclick="toggleNavMenu()" class="block px-5 py-3 text-british-green hover:bg-british-gold/10 hover:text-british-gold font-bold text-sm transition-colors"><i class="fa-solid fa-comments w-5 text-center mr-1"></i> 學員回饋</a>
+                <a href="#faq" onclick="toggleNavMenu()" class="block px-5 py-3 text-british-green hover:bg-british-gold/10 hover:text-british-gold font-bold text-sm transition-colors"><i class="fa-solid fa-circle-question w-5 text-center mr-1"></i> 常見問題</a>
+                <a href="#lecturer" onclick="toggleNavMenu()" class="block px-5 py-3 text-british-green hover:bg-british-gold/10 hover:text-british-gold font-bold text-sm transition-colors"><i class="fa-solid fa-user-tie w-5 text-center mr-1"></i> 關於講師</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="w-full bg-british-green border-b-8 border-british-gold overflow-hidden">
+        <div class="container mx-auto max-w-6xl">
+            <div class="relative aspect-[1000/445] w-full">
+                <img src="https://drive.google.com/thumbnail?id=1yMfuiuRV8lF7J6elbPQW29ru1qZ56qpV&sz=w1600" alt="職場法律戰略課" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </header>
+
+    <!-- 快速資訊 -->
+    <section class="bg-white border-b border-gray-100 py-12 px-6 text-left">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10 text-british-green">
+                <div class="bg-white border border-gray-100 flex flex-col sm:flex-row shadow-sm hover:shadow-md transition-all">
+                    <div class="bg-british-green text-british-gold p-8 flex flex-col items-center justify-center sm:w-1/3 min-h-[160px] text-center">
+                        <span class="text-xs font-bold opacity-80 uppercase text-center">AUG</span>
+                        <span class="text-6xl font-black serif-title text-center">22</span>
+                        <span class="text-sm font-bold tracking-widest uppercase text-center">SATURDAY</span>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col justify-center text-left">
+                        <span class="bg-british-gold/10 text-british-gold text-[10px] font-black px-2 py-0.5 rounded-sm uppercase mb-3 inline-block w-fit">Taipei Session</span>
+                        <h3 class="text-2xl font-black text-british-green serif-title mb-2">台北場：小樹屋｜大葉桉</h3>
+                        <p class="text-gray-500 font-medium text-sm"><a href="https://www.google.com/maps/search/?api=1&query=臺北市中山區民權西路20號" target="_blank" rel="noopener noreferrer" class="hover:text-british-gold hover:underline transition-colors"><i class="fa-solid fa-location-dot mr-1"></i>臺北市中山區民權西路20號</a></p>
+                    </div>
+                </div>
+                <div class="bg-white border border-gray-100 flex flex-col sm:flex-row shadow-sm hover:shadow-md transition-all">
+                    <div class="bg-british-gold text-white p-8 flex flex-col items-center justify-center sm:w-1/3 min-h-[160px] text-center">
+                        <span class="text-xs font-bold opacity-80 uppercase text-center">SEP</span>
+                        <span class="text-6xl font-black serif-title text-white text-center">12</span>
+                        <span class="text-sm font-bold tracking-widest uppercase text-white text-center">SATURDAY</span>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col justify-center text-left">
+                        <span class="bg-british-green/10 text-british-green text-[10px] font-black px-2 py-0.5 rounded-sm uppercase mb-3 inline-block w-fit">Taichung Session</span>
+                        <h3 class="text-2xl font-black text-british-green serif-title mb-2">台中場：WensCo文心會議室</h3>
+                        <p class="text-gray-500 font-medium text-sm text-left"><a href="https://www.google.com/maps/search/?api=1&query=台中市北屯區南興三路317號" target="_blank" rel="noopener noreferrer" class="hover:text-british-gold hover:underline transition-colors"><i class="fa-solid fa-location-dot mr-1"></i>台中市北屯區南興三路317號</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4 bg-british-cream/30 py-6 px-10 rounded border border-british-gold/10 text-british-green">
+                <i class="fa-solid fa-clock text-british-gold text-2xl"></i>
+                <span class="text-xl font-black serif-title">課程時間：14:00 - 17:00（課程總時數 3 小時）</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 主內容區 -->
+    <main class="container mx-auto max-w-6xl px-6 py-20">
+        <div class="flex flex-col lg:flex-row gap-16">
+            
+            <!-- 左側 (75%) -->
+            <div class="lg:w-3/4 space-y-28">
+                
+                <!-- 1. 痛點訴求 -->
+                <section id="pain-points" class="text-left scroll-mt-24">
+                    <div class="mb-14 text-left">
+                        <h2 class="text-british-green text-3xl md:text-5xl font-black serif-title tracking-tight mb-5">
+                            認真上班，<br class="md:hidden">受了委屈只能往肚裡吞？
+                        </h2>
+                        <div class="flex items-center gap-3">
+                            <span class="w-12 h-1 bg-british-gold"></span>
+                            <p class="text-british-gold text-xs font-bold uppercase tracking-[0.4em]">你有以下困境嗎？</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div class="bg-[#0F2F24] rounded-full px-7 py-5 flex items-center gap-5 border border-british-gold/30 shadow-lg hover:scale-[1.02] transition-all">
+                            <span class="q-mark-visual text-2xl min-w-[32px] text-center">?</span>
+                            <p class="text-white font-bold text-base md:text-lg font-sans text-left">面對性暗示只能尷尬陪笑，怕反抗就被黑？</p>
+                        </div>
+                        <div class="bg-[#0F2F24] rounded-full px-7 py-5 flex items-center gap-5 border border-british-gold/30 shadow-lg hover:scale-[1.02] transition-all">
+                            <span class="q-mark-visual text-2xl min-w-[32px] text-center">?</span>
+                            <p class="text-white font-bold text-base md:text-lg font-sans text-left">面對懷孕、年齡或性別造成的待遇不公，只能自認倒霉？</p>
+                        </div>
+                        <div class="bg-[#0F2F24] rounded-full px-7 py-5 flex items-center gap-5 border border-british-gold/30 shadow-lg hover:scale-[1.02] transition-all">
+                            <span class="q-mark-visual text-2xl min-w-[32px] text-center">?</span>
+                            <p class="text-white font-bold text-base md:text-lg font-sans text-left">主管交辦不合理，還被公開羞辱算霸凌嗎？</p>
+                        </div>
+                        <div class="bg-[#0F2F24] rounded-full px-7 py-5 flex items-center gap-5 border border-british-gold/30 shadow-lg hover:scale-[1.02] transition-all">
+                            <span class="q-mark-visual text-2xl min-w-[32px] text-center">?</span>
+                            <p class="text-white font-bold text-base md:text-lg font-sans text-left">想蒐證自救，卻怕被告「妨害秘密」反賠錢？</p>
+                        </div>
+                        <div class="bg-[#0F2F24] rounded-full px-7 py-5 flex items-center gap-5 border border-british-gold/30 shadow-lg hover:scale-[1.02] transition-all">
+                            <span class="q-mark-visual text-2xl min-w-[32px] text-center">?</span>
+                            <p class="text-white font-bold text-base md:text-lg font-sans text-left">想反擊卻沒底氣，最後只能默默提離職？</p>
+                        </div>
+                        <div class="bg-[#0F2F24] rounded-full px-7 py-5 flex items-center gap-5 border border-british-gold/30 shadow-lg hover:scale-[1.02] transition-all">
+                            <span class="q-mark-visual text-2xl min-w-[32px] text-center">?</span>
+                            <p class="text-white font-bold text-base md:text-lg font-sans text-left">看了很多職場文章，還是不知這算不算「違法」？</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 2. 課程簡介 -->
+                <section id="introduction" class="text-left scroll-mt-24">
+                    <h2 class="text-2xl font-black text-british-green serif-title heading-decorator mb-10 tracking-widest uppercase text-left">課程簡介 Introduction</h2>
+                    <div class="space-y-8 text-gray-600 leading-8 text-justify font-sans text-lg md:text-xl">
+                        <p>在職場受了委屈，你是不是總習慣先檢討自己，想著「再忍一下就過了」？但現實往往是：你的退讓，只會讓那些愛開黃腔、背後針對或權力凌人的人變本加厲。</p>
+                        <p>這堂課不唸無聊法條，我們將教您精準識別「職場紅線」，掌握有效存證的關鍵，並學會用法律邏輯站穩立場。這不僅是一堂法律課，更是能協助您在複雜的職涯關係中，建立一套合規且不可侵犯的自保防線。</p>
+                    </div>
+                </section>
+
+                <!-- 新增：適合對象 -->
+                <section id="target-audience" class="text-left scroll-mt-24">
+                    <h2 class="text-2xl font-black text-british-green serif-title heading-decorator mb-10 tracking-widest uppercase text-left">適合對象 Target Audience</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-white p-6 border border-gray-100 shadow-sm rounded-xl hover:shadow-md hover:border-british-gold/50 transition-all flex items-start gap-4">
+                            <div class="bg-british-gold/10 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-user-shield text-british-gold text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-british-green text-lg mb-2">想終結委屈的基層員工</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed">不再把委屈往肚裡吞，學會精準判斷紅線，合法蒐證並保護自身權益。</p>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 border border-gray-100 shadow-sm rounded-xl hover:shadow-md hover:border-british-gold/50 transition-all flex items-start gap-4">
+                            <div class="bg-british-gold/10 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-user-tie text-british-gold text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-british-green text-lg mb-2">怕踩紅線的各階主管</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed">避免「管理不當」變成「職場霸凌」，學會合法合規的管理界線與避險策略。</p>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 border border-gray-100 shadow-sm rounded-xl hover:shadow-md hover:border-british-gold/50 transition-all flex items-start gap-4">
+                            <div class="bg-british-gold/10 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-users-gear text-british-gold text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-british-green text-lg mb-2">處理勞資糾紛的 HR</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed">掌握實務判例與最新法令趨勢，提升處理內部申訴與勞資爭議的專業底氣。</p>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 border border-gray-100 shadow-sm rounded-xl hover:shadow-md hover:border-british-gold/50 transition-all flex items-start gap-4">
+                            <div class="bg-british-gold/10 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-briefcase text-british-gold text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-british-green text-lg mb-2">準備轉職／處理爭議者</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed">無論是想好聚好散還是爭取資遣費，為自己準備最具談判籌碼的法律武器。</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 課程核心 -->
+                <section id="core-curriculum" class="text-left scroll-mt-24">
+                    <h2 class="text-2xl font-black text-british-green serif-title heading-decorator mb-10 tracking-widest uppercase text-left">課程核心：4大防身關鍵</h2>
+                    <div class="space-y-6">
+                        <div class="bg-white p-8 shadow-sm rounded-xl hover:shadow-md transition-all">
+                            <h3 class="font-bold text-british-green text-xl mb-3 text-left">一、認識你的戰場</h3>
+                            <p class="text-base text-gray-600 leading-relaxed font-sans text-left">在進入法律程序前，你必須先看清情勢。我們將協助你建立正確的職場戰略思維。</p>
+                        </div>
+                        <div class="bg-white p-8 shadow-sm rounded-xl hover:shadow-md transition-all">
+                            <h3 class="font-bold text-british-green text-xl mb-4 text-left">二、職場性騷擾：終結模糊地帶</h3>
+                            <ul class="space-y-3 text-base text-gray-600 leading-relaxed font-sans text-left">
+                                <li class="flex items-start gap-3 text-left"><i class="fa-solid fa-check text-british-gold mt-1.5 text-sm"></i> <div><strong class="text-british-green font-bold">性騷擾的界線：</strong> 透過大量實務案例，精準定義何謂「越界」，不再各說各話。</div></li>
+                                <li class="flex items-start gap-3 text-left"><i class="fa-solid fa-check text-british-gold mt-1.5 text-sm"></i> <div><strong class="text-british-green font-bold">公司的責任：</strong> 剖析資方應負擔的法定調查與預防義務。</div></li>
+                                <li class="flex items-start gap-3 text-left"><i class="fa-solid fa-check text-british-gold mt-1.5 text-sm"></i> <div><strong class="text-british-green font-bold">證據與調查：</strong> 教你如何在法律框架內，建立強而有力的證據鏈。</div></li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-8 shadow-sm rounded-xl hover:shadow-md transition-all">
+                            <h3 class="font-bold text-british-green text-xl mb-4 text-left">三、性別平等：打破隱形天花板</h3>
+                            <ul class="space-y-3 text-base text-gray-600 leading-relaxed font-sans text-left">
+                                <li class="flex items-start gap-3 text-left"><i class="fa-solid fa-check text-british-gold mt-1.5 text-sm"></i> <div><strong class="text-british-green font-bold">歧視禁止：</strong> 深入解析年齡、性別、外貌等隱形歧視的法律救濟管道。</div></li>
+                                <li class="flex items-start gap-3 text-left"><i class="fa-solid fa-check text-british-gold mt-1.5 text-sm"></i> <div><strong class="text-british-green font-bold">保護規定：</strong> 了解勞動法規中對於不同群體的專屬保護條款。</div></li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-8 shadow-sm rounded-xl hover:shadow-md transition-all">
+                            <h3 class="font-bold text-british-green text-xl mb-4 text-left">四、職場霸凌：重塑權力邊界</h3>
+                            <ul class="space-y-3 text-base text-gray-600 leading-relaxed font-sans text-left">
+                                <li class="flex items-start gap-3 text-left"><i class="fa-solid fa-check text-british-gold mt-1.5 text-sm"></i> <div><strong class="text-british-green font-bold">職場霸凌的範圍：</strong> 釐清「管理不當」與「惡意霸凌」的關鍵差別。</div></li>
+                                <li class="flex items-start gap-3 text-left"><i class="fa-solid fa-check text-british-gold mt-1.5 text-sm"></i> <div><strong class="text-british-green font-bold">霸凌法規新重點：</strong> 掌握最新的法令趨勢與保護機制，確保你的權益與時俱進。</div></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 獨家課程亮點 -->
+                <section id="course-highlight" class="text-left !mt-8 scroll-mt-24">
+                    <div class="relative bg-british-green rounded-2xl p-8 md:p-12 overflow-hidden border border-british-gold/40 shadow-2xl group">
+                        <i class="fa-solid fa-gem absolute -right-10 -bottom-10 text-[180px] text-british-gold opacity-[0.05] group-hover:scale-110 group-hover:rotate-12 transition-transform duration-700 ease-out"></i>
+                        <div class="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-british-gold to-transparent opacity-60"></div>
+                        <div class="relative z-10 flex flex-col md:flex-row items-center md:items-start gap-8">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 rounded-full border border-british-gold/30 flex items-center justify-center bg-gradient-to-br from-british-gold/20 to-transparent backdrop-blur-sm shadow-[0_0_20px_rgba(197,160,89,0.15)] group-hover:shadow-[0_0_30px_rgba(197,160,89,0.3)] transition-shadow duration-500">
+                                    <i class="fa-solid fa-key text-2xl text-british-gold text-center"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1 text-center md:text-left">
+                                <h2 class="text-2xl md:text-3xl font-black bg-gradient-to-r from-[#C5A059] via-[#FCEEB5] to-[#C5A059] text-transparent bg-clip-text serif-title mb-4 tracking-widest drop-shadow-sm text-left">獨家實戰解析</h2>
+                                <p class="text-base md:text-lg leading-relaxed font-sans font-medium text-gray-200 text-left">
+                                    報名學員可於課前 <strong class="text-british-gold font-bold tracking-wide">提前提出自身的職場疑問</strong>，Eva 老師將於課堂中親自解析與回應，讓學習內容更貼近您的真實職場情境。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 新增：預期效益 (全新懸浮卡片排版) -->
+                <section id="expected-benefits" class="text-left scroll-mt-24">
+                    <h2 class="text-2xl font-black text-british-green serif-title heading-decorator mb-10 tracking-widest uppercase text-left">預期效益 Expected Benefits</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- 卡片 1 -->
+                        <div class="group bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-british-gold/50 transition-all duration-300 relative overflow-hidden flex flex-col">
+                            <div class="absolute top-0 right-0 w-24 h-24 bg-british-gold/5 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110"></div>
+                            <div class="w-14 h-14 bg-british-green/5 text-british-green rounded-xl flex items-center justify-center mb-6 group-hover:bg-british-gold group-hover:text-white transition-colors duration-300 shadow-sm">
+                                <i class="fa-solid fa-lightbulb text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-british-green mb-3 relative z-10">不再自我懷疑</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed relative z-10 flex-1">精準判斷職場行為是否觸法，快速釐清「是我想太多」還是「對方太超過」。</p>
+                        </div>
+                        
+                        <!-- 卡片 2 -->
+                        <div class="group bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-british-gold/50 transition-all duration-300 relative overflow-hidden flex flex-col">
+                            <div class="absolute top-0 right-0 w-24 h-24 bg-british-gold/5 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110"></div>
+                            <div class="w-14 h-14 bg-british-green/5 text-british-green rounded-xl flex items-center justify-center mb-6 group-hover:bg-british-gold group-hover:text-white transition-colors duration-300 shadow-sm">
+                                <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-british-green mb-3 relative z-10">掌握蒐證要訣</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed relative z-10 flex-1">學會在合法的範圍內收集最有利的證據，打造對方無法反駁的強大防線。</p>
+                        </div>
+                        
+                        <!-- 卡片 3 -->
+                        <div class="group bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-british-gold/50 transition-all duration-300 relative overflow-hidden flex flex-col">
+                            <div class="absolute top-0 right-0 w-24 h-24 bg-british-gold/5 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110"></div>
+                            <div class="w-14 h-14 bg-british-green/5 text-british-green rounded-xl flex items-center justify-center mb-6 group-hover:bg-british-gold group-hover:text-white transition-colors duration-300 shadow-sm">
+                                <i class="fa-solid fa-handshake text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-british-green mb-3 relative z-10">優雅且堅定的談判力</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed relative z-10 flex-1">將冰冷的法律條文轉化為實際的溝通籌碼，在談判桌上站穩腳步不吃虧。</p>
+                        </div>
+                        
+                        <!-- 卡片 4 -->
+                        <div class="group bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-british-gold/50 transition-all duration-300 relative overflow-hidden flex flex-col">
+                            <div class="absolute top-0 right-0 w-24 h-24 bg-british-gold/5 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110"></div>
+                            <div class="w-14 h-14 bg-british-green/5 text-british-green rounded-xl flex items-center justify-center mb-6 group-hover:bg-british-gold group-hover:text-white transition-colors duration-300 shadow-sm">
+                                <i class="fa-solid fa-shield-halved text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-british-green mb-3 relative z-10">從源頭降低風險</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed relative z-10 flex-1">幫助管理職與人資建立合規的制度思維，有效預防並妥善處理潛在的勞資危機。</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3. 課程特色 -->
+                <section id="features" class="text-left scroll-mt-24">
+                    <h2 class="text-2xl font-black text-british-green serif-title heading-decorator mb-10 tracking-widest uppercase text-left">課程特色：為什麼這門課不可替代？</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                        <div class="p-8 bg-white border border-gray-100 shadow-sm rounded-xl hover:border-british-gold transition duration-300">
+                            <h3 class="font-bold text-british-green text-xl mb-4 flex items-center gap-3 text-left"><i class="fa-solid fa-scale-balanced text-british-gold text-xl text-center"></i> 雙向視角，全方位防護</h3>
+                            <p class="text-base text-gray-500 leading-relaxed font-sans text-left">課程同時說明勞方與資方常見的誤區與法律責任。無論你是想自保的員工，還是想避險的主管，都能在此獲得完整的認知，降低對立風險。</p>
+                        </div>
+                        <div class="p-8 bg-white border border-gray-100 shadow-sm rounded-xl hover:border-british-gold transition duration-300">
+                            <h3 class="font-bold text-british-green text-xl mb-4 flex items-center gap-3 text-left"><i class="fa-solid fa-book-open text-british-gold text-xl text-center"></i> 白話法律，零門檻上手</h3>
+                            <p class="text-base text-gray-500 leading-relaxed font-sans text-left">課程以一般上班族為設計對象，不需具備法律背景，Eva 老師將以白話方式說明法律概念與實務應用。</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 4. 學員回饋 (完整 7 則) -->
+                <section id="feedback" class="text-left scroll-mt-24">
+                    <h2 class="text-2xl font-black text-british-green serif-title heading-decorator mb-10 tracking-widest uppercase text-left">學員回饋 Feedback</h2>
+                    <div class="columns-1 md:columns-2 gap-6">
+                        <div class="break-inside-avoid mb-6 bg-white p-7 border border-gray-100 shadow-sm rounded-xl hover:border-british-gold/50 transition-all">
+                            <i class="fa-solid fa-quote-left text-british-gold/30 text-3xl mb-4 text-center"></i>
+                            <p class="text-base text-gray-600 leading-loose mb-5 font-medium text-left">老師非常了解人資工作實務上會遇到的卡點，針對我現在的疑問（工作規則、調職、離職以及性騷等常見勞資爭議）給了非常多關鍵的回饋，而且是明確、可執行的行動建議。</p>
+                            <div class="inline-block bg-british-gold/10 text-british-gold border border-british-gold/20 text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest text-center">行政經理</div>
+                        </div>
+                        <div class="break-inside-avoid mb-6 bg-white p-7 border border-gray-100 shadow-sm rounded-xl hover:border-british-gold/50 transition-all">
+                            <i class="fa-solid fa-quote-left text-british-gold/30 text-3xl mb-4 text-center"></i>
+                            <p class="text-base text-gray-600 leading-loose mb-5 font-medium text-left">好難得我聽很多法條的課沒有睡著xD<br>很喜歡老師把生硬的判例用生活化跟活潑的方式來說明，在很多案例上的建議，也會比較知道應該怎麼做，或是建議怎麼做。尤其是每個章節的公司怎麼做，還有員工怎麼做。</p>
+                            <div class="inline-block bg-british-gold/10 text-british-gold border border-british-gold/20 text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest text-center">人資</div>
+                        </div>
+                        <div class="break-inside-avoid mb-6 bg-white p-7 border border-gray-100 shadow-sm rounded-xl hover:border-british-gold/50 transition-all">
+                            <i class="fa-solid fa-quote-left text-british-gold/30 text-3xl mb-4 text-center"></i>
+                            <p class="text-base text-gray-600 leading-loose mb-5 font-medium text-left">對於法條雖然有基本理解，但比較無法融會貫通，透過課程講解可以幫助實務的運用，知道風險與權益為何。</p>
+                            <div class="inline-block bg-british-gold/10 text-british-gold border border-british-gold/20 text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest text-center">人資</div>
+                        </div>
+                        <div class="break-inside-avoid mb-6 bg-white p-7 border border-gray-100 shadow-sm rounded-xl hover:border-british-gold/50 transition-all">
+                            <i class="fa-solid fa-quote-left text-british-gold/30 text-3xl mb-4 text-center"></i>
+                            <p class="text-base text-gray-600 leading-loose mb-5 font-medium text-left">講師講得很清楚易懂，講義部分編排也容易閱讀。<br>有些盲點都有講清楚，像是很容易被誤會的條文，函釋補充，這對於職場不算特別資深的社會人士來說，真的很重要，可以好好的去瞭解自己的權益、誤區等等的，這點真的超級感謝。</p>
+                            <div class="inline-block bg-british-gold/10 text-british-gold border border-british-gold/20 text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest text-center">一般職員</div>
+                        </div>
+                        <div class="break-inside-avoid mb-6 bg-white p-7 border border-gray-100 shadow-sm rounded-xl hover:border-british-gold/50 transition-all">
+                            <i class="fa-solid fa-quote-left text-british-gold/30 text-3xl mb-4 text-center"></i>
+                            <p class="text-base text-gray-600 leading-loose mb-5 font-medium text-left">了解職場上的勞資雙方權益。</p>
+                            <div class="inline-block bg-british-gold/10 text-british-gold border border-british-gold/20 text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest text-center">一般職員</div>
+                        </div>
+                        <div class="break-inside-avoid mb-6 bg-white p-7 border border-gray-100 shadow-sm rounded-xl hover:border-british-gold/50 transition-all">
+                            <i class="fa-solid fa-quote-left text-british-gold/30 text-3xl mb-4 text-center"></i>
+                            <p class="text-base text-gray-600 leading-loose mb-5 font-medium text-left">對於新手人資的我有了概念，也從同學們的問題老師解說後獲得許多觀念。</p>
+                            <div class="inline-block bg-british-gold/10 text-british-gold border border-british-gold/20 text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest text-center">人資</div>
+                        </div>
+                        <div class="break-inside-avoid mb-6 bg-white p-7 border border-gray-100 shadow-sm rounded-xl hover:border-british-gold/50 transition-all">
+                            <i class="fa-solid fa-quote-left text-british-gold/30 text-3xl mb-4 text-center"></i>
+                            <p class="text-base text-gray-600 leading-loose mb-5 font-medium text-left">感謝老師提供非常多實際情況的回饋。</p>
+                            <div class="inline-block bg-british-gold/10 text-british-gold border border-british-gold/20 text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest text-center">一般職員</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 5. 常見問題 FAQ (無標籤版) -->
+                <section id="faq" class="text-left scroll-mt-24">
+                    <h2 class="text-2xl font-black text-british-green serif-title heading-decorator mb-8 tracking-widest uppercase text-left">常見問題 FAQ</h2>
+                    
+                    <div class="mb-8">
+                        <div class="flex items-center gap-3 mb-5">
+                            <span class="w-8 h-px bg-british-gold"></span>
+                            <h3 class="text-base font-black text-british-gold tracking-widest uppercase text-left">關於課程</h3>
+                            <span class="w-8 h-px bg-british-gold"></span>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="bg-white border border-gray-100 shadow-sm rounded-lg hover:border-british-gold/50 transition-colors">
+                                <button onclick="toggleFaq(this)" class="w-full text-left p-4 md:p-5 flex justify-between items-center group focus:outline-none">
+                                    <h4 class="font-bold text-british-green text-base md:text-lg pt-0.5 pr-4 group-hover:translate-x-1 transition-transform text-left">我沒有法律背景，會不會聽不懂？</h4>
+                                    <span class="text-british-gold text-base transform transition-transform duration-300 icon-toggle flex-shrink-0">
+                                        <i class="fa-solid fa-chevron-down text-center"></i>
+                                    </span>
+                                </button>
+                                <div class="hidden opacity-0 transition-opacity duration-300">
+                                    <div class="pb-4 md:pb-5 pl-4 md:pl-5 pr-4 md:pr-5 -mt-2">
+                                        <p class="text-gray-600 leading-relaxed text-sm md:text-base font-sans text-left">
+                                            完全不用擔心！本課程以一般人為設計對象，不需具備法律背景，Eva 老師將以白話方式說明法律概念與實務應用。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-white border border-gray-100 shadow-sm rounded-lg hover:border-british-gold/50 transition-colors">
+                                <button onclick="toggleFaq(this)" class="w-full text-left p-4 md:p-5 flex justify-between items-center group focus:outline-none">
+                                    <h4 class="font-bold text-british-green text-base md:text-lg pt-0.5 pr-4 group-hover:translate-x-1 transition-transform text-left">課程內容偏理論還是實務？</h4>
+                                    <span class="text-british-gold text-base transform transition-transform duration-300 icon-toggle flex-shrink-0">
+                                        <i class="fa-solid fa-chevron-down text-center"></i>
+                                    </span>
+                                </button>
+                                <div class="hidden opacity-0 transition-opacity duration-300">
+                                    <div class="pb-4 md:pb-5 pl-4 md:pl-5 pr-4 md:pr-5 -mt-2">
+                                        <div class="text-gray-600 leading-relaxed text-sm md:text-base font-sans space-y-3 text-left">
+                                            <p>本課程採取「實務與理論並進」的授課模式。</p>
+                                            <p>我們深知單純的法條無法解決職場糾紛，因此 Eva 老師將高度嚴謹的法律邏輯，轉化為具備即戰力的行動指南：</p>
+                                            <ul class="space-y-3 mt-4 mb-4 bg-british-cream/40 p-4 rounded border border-british-gold/10 text-left">
+                                                <li class="flex items-start gap-2 text-left">
+                                                    <i class="fa-solid fa-check text-british-gold mt-1 text-xs flex-shrink-0"></i>
+                                                    <div><strong class="text-british-green font-bold">真實案例深度解析：</strong>捨棄死背法條，透過大量血淋淋的真實職場案例，帶你釐清法官的判決標準。</div>
+                                                </li>
+                                                <li class="flex items-start gap-2 text-left">
+                                                    <i class="fa-solid fa-check text-british-gold mt-1 text-xs flex-shrink-0"></i>
+                                                    <div><strong class="text-british-green font-bold">常見紅線精準識別：</strong>系統化梳理性騷擾、歧視與霸凌的關鍵紅線，讓你掌握法律在實際情境中的界線。</div>
+                                                </li>
+                                                <li class="flex items-start gap-2 text-left">
+                                                    <i class="fa-solid fa-check text-british-gold mt-1 text-xs flex-shrink-0"></i>
+                                                    <div><strong class="text-british-green font-bold">場景化運用指導：</strong>協助學員將法律知識導入實際工作情境，學會如何優雅且合法地保護自己，不再紙上談兵。</div>
+                                                </li>
+                                            </ul>
+                                            <p>這堂課的目標是讓你帶走一套「即學即用」的自保工具，而非只是增加法律常識。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-white border border-gray-100 shadow-sm rounded-lg hover:border-british-gold/50 transition-colors">
+                                <button onclick="toggleFaq(this)" class="w-full text-left p-4 md:p-5 flex justify-between items-center group focus:outline-none">
+                                    <h4 class="font-bold text-british-green text-base md:text-lg pt-0.5 pr-4 group-hover:translate-x-1 transition-transform text-left">課程內容偏資方還是勞方？</h4>
+                                    <span class="text-british-gold text-base transform transition-transform duration-300 icon-toggle flex-shrink-0">
+                                        <i class="fa-solid fa-chevron-down text-center"></i>
+                                    </span>
+                                </button>
+                                <div class="hidden opacity-0 transition-opacity duration-300">
+                                    <div class="pb-4 md:pb-5 pl-4 md:pl-5 pr-4 md:pr-5 -mt-2 text-left">
+                                        <div class="text-gray-600 leading-relaxed text-sm md:text-base font-sans space-y-3">
+                                            <p>本課程採取 <strong class="text-british-green font-bold">「勞資雙向平衡」</strong> 的視角，旨在打破對立，讓雙方都能精準避險。</p>
+                                            <ul class="space-y-3 mt-4 mb-2 bg-british-cream/40 p-4 rounded border border-british-gold/10">
+                                                <li class="flex items-start gap-2 text-left">
+                                                    <i class="fa-solid fa-check text-british-gold mt-1 text-xs flex-shrink-0"></i>
+                                                    <div><strong class="text-british-green font-bold">對勞方而言：</strong>教你如何識別紅線、合法蒐證，在受委屈時不再沈默，拿回職場主導權。</div>
+                                                </li>
+                                                <li class="flex items-start gap-2 text-left">
+                                                    <i class="fa-solid fa-check text-british-gold mt-1 text-xs flex-shrink-0"></i>
+                                                    <div><strong class="text-british-green font-bold">對資方/主管而言：</strong>說明常見的管理誤區與法定法律責任，協助企業建立合規制度，從源頭預防法律風險。</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-white border border-gray-100 shadow-sm rounded-lg hover:border-british-gold/50 transition-colors">
+                                <button onclick="toggleFaq(this)" class="w-full text-left p-4 md:p-5 flex justify-between items-center group focus:outline-none">
+                                    <h4 class="font-bold text-british-green text-base md:text-lg pt-0.5 pr-4 group-hover:translate-x-1 transition-transform text-left">課前提問的內容會被其他同學知道嗎？</h4>
+                                    <span class="text-british-gold text-base transform transition-transform duration-300 icon-toggle flex-shrink-0">
+                                        <i class="fa-solid fa-chevron-down text-center"></i>
+                                    </span>
+                                </button>
+                                <div class="hidden opacity-0 transition-opacity duration-300">
+                                    <div class="pb-4 md:pb-5 pl-4 md:pl-5 pr-4 md:pr-5 -mt-2">
+                                        <p class="text-gray-600 leading-relaxed text-sm md:text-base font-sans text-left">
+                                            我們非常重視隱私，所有課前提問皆會進行匿名處理與去識別化。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-white border border-gray-100 shadow-sm rounded-lg hover:border-british-gold/50 transition-colors">
+                                <button onclick="toggleFaq(this)" class="w-full text-left p-4 md:p-5 flex justify-between items-center group focus:outline-none">
+                                    <h4 class="font-bold text-british-green text-base md:text-lg pt-0.5 pr-4 group-hover:translate-x-1 transition-transform text-left">課程形式與時數？</h4>
+                                    <span class="text-british-gold text-base transform transition-transform duration-300 icon-toggle flex-shrink-0">
+                                        <i class="fa-solid fa-chevron-down text-center"></i>
+                                    </span>
+                                </button>
+                                <div class="hidden opacity-0 transition-opacity duration-300">
+                                    <div class="pb-4 md:pb-5 pl-4 md:pl-5 pr-4 md:pr-5 -mt-2">
+                                        <p class="text-gray-600 leading-relaxed text-sm md:text-base font-sans text-left">
+                                            本課程為【實體課程】，課程時數為 3 小時。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 分類：付款與發票 -->
+                        <div class="flex items-center gap-3 mb-5 mt-12 text-left">
+                            <span class="w-8 h-px bg-british-gold"></span>
+                            <h3 class="text-base font-black text-british-gold tracking-widest uppercase text-left">付款與發票</h3>
+                            <span class="w-8 h-px bg-british-gold"></span>
+                        </div>
+
+                        <div class="space-y-4 text-left">
+                            <!-- 付款 Q1 -->
+                            <div class="bg-white border border-gray-100 shadow-sm rounded-lg hover:border-british-gold/50 transition-colors">
+                                <button onclick="toggleFaq(this)" class="w-full text-left p-4 md:p-5 flex justify-between items-center group focus:outline-none">
+                                    <h4 class="font-bold text-british-green text-base md:text-lg pt-0.5 pr-4 group-hover:translate-x-1 transition-transform text-left">付款方式有哪些？</h4>
+                                    <span class="text-british-gold text-base transform transition-transform duration-300 icon-toggle flex-shrink-0">
+                                        <i class="fa-solid fa-chevron-down text-center"></i>
+                                    </span>
+                                </button>
+                                <div class="hidden opacity-0 transition-opacity duration-300">
+                                    <div class="pb-4 md:pb-5 pl-4 md:pl-5 pr-4 md:pr-5 -mt-2">
+                                        <p class="text-gray-600 leading-relaxed text-sm md:text-base font-sans text-left">
+                                            匯款 / LINE Pay
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 付款 Q2 -->
+                            <div class="bg-white border border-gray-100 shadow-sm rounded-lg hover:border-british-gold/50 transition-colors">
+                                <button onclick="toggleFaq(this)" class="w-full text-left p-4 md:p-5 flex justify-between items-center group focus:outline-none">
+                                    <h4 class="font-bold text-british-green text-base md:text-lg pt-0.5 pr-4 group-hover:translate-x-1 transition-transform text-left">如何確認付款成功？</h4>
+                                    <span class="text-british-gold text-base transform transition-transform duration-300 icon-toggle flex-shrink-0">
+                                        <i class="fa-solid fa-chevron-down text-center"></i>
+                                    </span>
+                                </button>
+                                <div class="hidden opacity-0 transition-opacity duration-300">
+                                    <div class="pb-4 md:pb-5 pl-4 md:pl-5 pr-4 md:pr-5 -mt-2">
+                                        <div class="text-gray-600 leading-relaxed text-sm md:text-base font-sans space-y-3 text-left">
+                                            <p>付款完成後，請私訊小編您的付款資訊：</p>
+                                            <ul class="space-y-3 mt-4 mb-2 bg-british-cream/40 p-4 rounded border border-british-gold/10">
+                                                <li class="flex items-start gap-2 text-left">
+                                                    <i class="fa-solid fa-check text-british-gold mt-1 text-xs flex-shrink-0"></i>
+                                                    <div><strong class="text-british-green font-bold">匯款：</strong>帳號後 5 碼</div>
+                                                </li>
+                                                <li class="flex items-start gap-2 text-left">
+                                                    <i class="fa-solid fa-check text-british-gold mt-1 text-xs flex-shrink-0"></i>
+                                                    <div><strong class="text-british-green font-bold">LINE Pay：</strong>手機後 3 碼</div>
+                                                </li>
+                                            </ul>
+                                            <p>小編完成對帳後會再回覆您，謝謝😊</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 付款 Q3 -->
+                            <div class="bg-white border border-gray-100 shadow-sm rounded-lg hover:border-british-gold/50 transition-colors">
+                                <button onclick="toggleFaq(this)" class="w-full text-left p-4 md:p-5 flex justify-between items-center group focus:outline-none">
+                                    <h4 class="font-bold text-british-green text-base md:text-lg pt-0.5 pr-4 group-hover:translate-x-1 transition-transform text-left">優惠碼如何使用？</h4>
+                                    <span class="text-british-gold text-base transform transition-transform duration-300 icon-toggle flex-shrink-0">
+                                        <i class="fa-solid fa-chevron-down text-center"></i>
+                                    </span>
+                                </button>
+                                <div class="hidden opacity-0 transition-opacity duration-300">
+                                    <div class="pb-4 md:pb-5 pl-4 md:pl-5 pr-4 md:pr-5 -mt-2">
+                                        <div class="text-gray-600 leading-relaxed text-sm md:text-base font-sans space-y-3 text-left">
+                                            <p>點進報名表單後，找到「粉絲優惠碼」欄位 — 填寫優惠碼，折扣就會自動生效。</p>
+                                            <p class="text-red-700 font-bold text-sm bg-red-50 p-3 rounded border border-red-100 leading-relaxed text-left">
+                                                請務必確認優惠碼是否套用成功，若您發生遺忘輸入優惠碼的狀況，恕我們無法讓您進行退款再重新購買的動作。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 付款 Q4 -->
+                            <div class="bg-white border border-gray-100 shadow-sm rounded-lg hover:border-british-gold/50 transition-colors">
+                                <button onclick="toggleFaq(this)" class="w-full text-left p-4 md:p-5 flex justify-between items-center group focus:outline-none">
+                                    <h4 class="font-bold text-british-green text-base md:text-lg pt-0.5 pr-4 group-hover:translate-x-1 transition-transform text-left">可以開立統一編號嗎?</h4>
+                                    <span class="text-british-gold text-base transform transition-transform duration-300 icon-toggle flex-shrink-0">
+                                        <i class="fa-solid fa-chevron-down text-center"></i>
+                                    </span>
+                                </button>
+                                <div class="hidden opacity-0 transition-opacity duration-300">
+                                    <div class="pb-4 md:pb-5 pl-4 md:pl-5 pr-4 md:pr-5 -mt-2">
+                                        <p class="text-gray-600 leading-relaxed text-sm md:text-base font-sans text-left">
+                                            可以！請在報名表單中輸入公司抬頭與統編，發票會於上課當天提供給您。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 付款 Q5 -->
+                            <div class="bg-white border border-gray-100 shadow-sm rounded-lg hover:border-british-gold/50 transition-colors">
+                                <button onclick="toggleFaq(this)" class="w-full text-left p-4 md:p-5 flex justify-between items-center group focus:outline-none">
+                                    <h4 class="font-bold text-british-green text-base md:text-lg pt-0.5 pr-4 group-hover:translate-x-1 transition-transform text-left">繳費後臨時無法參加，可以退費嗎？</h4>
+                                    <span class="text-british-gold text-base transform transition-transform duration-300 icon-toggle flex-shrink-0">
+                                        <i class="fa-solid fa-chevron-down text-center"></i>
+                                    </span>
+                                </button>
+                                <div class="hidden opacity-0 transition-opacity duration-300">
+                                    <div class="pb-4 md:pb-5 pl-4 md:pl-5 pr-4 md:pr-5 -mt-2">
+                                        <div class="text-gray-600 leading-relaxed text-sm md:text-base font-sans space-y-3 text-left">
+                                            <p>完成繳費後，<strong class="text-red-700 font-bold">恕不提供退費服務</strong>。</p>
+                                            <p>惟學員可選擇將已繳費用保留作為未來折抵，適用於：</p>
+                                            <ul class="space-y-3 mt-2 mb-4 bg-british-cream/40 p-4 rounded border border-british-gold/10">
+                                                <li class="flex items-center gap-2 text-left">
+                                                    <i class="fa-solid fa-check text-british-gold text-xs flex-shrink-0"></i>
+                                                    <div class="font-bold text-british-green">Eva 老師其他「職場法律系列課程」</div>
+                                                </li>
+                                                <li class="flex items-center gap-2 text-left">
+                                                    <i class="fa-solid fa-check text-british-gold text-xs flex-shrink-0"></i>
+                                                    <div class="font-bold text-british-green">紅人學院其他課程 <a href="#" class="text-british-gold underline underline-offset-2 hover:text-british-green transition ml-1 font-medium">(點擊查看課程)</a></div>
+                                                </li>
+                                            </ul>
+                                            <div class="bg-gray-50 p-4 rounded border border-gray-100 text-sm text-gray-500 space-y-2 text-left">
+                                                <p>※ 若未來課程費用 <strong class="text-british-green font-bold">高於</strong> 本次金額，需補足差額；</p>
+                                                <p>※ 若未來課程費用 <strong class="text-red-700 font-bold">低於</strong> 本次金額，差額恕不另行退還。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 講師介紹 -->
+                <section id="lecturer" class="text-left scroll-mt-24">
+                    <div class="relative bg-[#0F2F24] rounded-3xl overflow-hidden shadow-2xl border border-british-gold/20 p-8 md:p-12">
+                        <div class="absolute top-0 right-0 w-64 h-64 bg-british-gold/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
+                        <div class="relative z-10 text-left">
+                            <div class="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12">
+                                <div class="flex-shrink-0 relative group md:mt-2">
+                                    <div class="absolute inset-0 border-2 border-british-gold/40 rounded-full transform group-hover:scale-[1.08] transition-transform duration-500"></div>
+                                    <div class="relative w-32 h-32 md:w-40 md:h-40 bg-[#174533] rounded-full overflow-hidden border-[6px] border-[#0F2F24] shadow-xl z-10 flex items-center justify-center text-center">
+                                        <img src="https://drive.google.com/thumbnail?id=1c-8S_vUPR5MePY-LEyco4uPUDsa15iK6&sz=w800" alt="Eva 老師照片" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out text-center">
+                                    </div>
+                                </div>
+                                <div class="flex-1 w-full text-center md:text-left flex flex-col justify-center">
+                                    <h2 class="text-3xl md:text-4xl font-black mb-6 md:mb-8 flex justify-center md:justify-start items-center gap-4 serif-title text-left">
+                                        <span class="text-white text-left">講師</span>
+                                        <span class="text-white font-light opacity-60 text-left">|</span>
+                                        <span class="text-british-gold text-left">Eva</span>
+                                    </h2>
+                                    <div class="text-base md:text-lg text-gray-200 leading-relaxed font-sans text-left">
+                                        <p class="text-white/95 text-left">
+                                            Eva 老師擁有 15 年以上人資管理與勞動法令實務經驗，長期協助企業處理勞資爭議與職場管理問題。<br class="hidden md:block">
+                                            她擅長快速洞察問題核心，並能提出具體、可執行的解決方案，而非紙上談兵。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-8 md:mt-10 pt-8 border-t border-british-gold/20 text-left">
+                                <ul class="space-y-2.5 text-base md:text-lg text-gray-200 leading-relaxed font-sans text-left">
+                                    <li class="flex items-start gap-4 text-left">
+                                        <i class="fa-solid fa-check text-british-gold mt-1.5 text-xl flex-shrink-0 text-center"></i>
+                                        <span class="text-left">專精於 <strong class="text-white tracking-wide">勞資協調、工作管理、內部規章擬定、法令諮詢與績效管理</strong>。</span>
+                                    </li>
+                                    <li class="flex items-start gap-4 text-left">
+                                        <i class="fa-solid fa-check text-british-gold mt-1.5 text-xl flex-shrink-0 text-center"></i>
+                                        <span class="text-left">帶領「灃康人力資源」、「灃禾管理顧問」與「企業危機百科」團隊。</span>
+                                    </li>
+                                    <li class="flex items-start gap-4 text-left">
+                                        <i class="fa-solid fa-check text-british-gold mt-1.5 text-xl flex-shrink-0 text-center"></i>
+                                        <span class="text-left">深耕勞動法令實務，累積服務 <strong class="text-white tracking-wide">百家以上企業</strong>，客戶涵蓋上市櫃公司與指標性中小企業。</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- 右側 (25%) -->
+            <aside class="lg:w-1/4 w-full lg:sticky lg:top-[120px] self-start text-left z-40">
+                <div class="space-y-4 md:space-y-6">
+                    <!-- 報名主要框框 -->
+                    <div class="bg-white p-8 border border-gray-200 shadow-2xl rounded-2xl relative overflow-hidden text-british-green text-left hidden md:block">
+                        <div class="absolute top-0 left-0 w-full h-1.5 bg-british-gold"></div>
+                        <div class="mb-8 text-left">
+                            <div class="flex items-center justify-between mb-3 text-left">
+                                <p class="text-british-green font-black text-xl serif-title tracking-widest uppercase text-left">早鳥價</p>
+                                <span class="text-sm bg-red-600 text-white px-3 py-1 font-black rounded-sm shadow-md text-center">8/4前</span>
+                            </div>
+                            <div class="flex items-baseline gap-2 text-left">
+                                <span class="text-5xl font-black text-british-green font-serif tracking-tighter text-left">$2,200</span>
+                            </div>
+                            <p class="text-sm text-gray-400 mt-2 line-through opacity-60 text-left">原價 NT$2,400</p>
+                            <div class="mt-6 p-4 bg-british-gold/5 border border-british-gold/20 rounded-lg text-left">
+                                <p class="text-[11px] text-british-gold font-bold uppercase tracking-widest mb-1 flex items-center gap-2 text-left"><i class="fa-solid fa-ticket text-center"></i> 粉絲優惠碼</p>
+                                <p class="text-xs font-medium text-left">輸入「<strong>EVA-100</strong>」即可套用優惠！</p>
+                            </div>
+                        </div>
+                        <button onclick="openRegisterModal()" class="w-full bg-british-green text-british-gold font-black py-5 hover:bg-british-lightGreen transition active:scale-95 shadow-xl uppercase tracking-widest border border-british-gold text-lg rounded-xl text-center">立即報名課程</button>
+                    </div>
+
+                    <!-- 獨立出來的私訊框框 -->
+                    <div class="hidden md:block">
+                        <a href="https://www.instagram.com/legal._.thinking/" target="_blank" class="w-full flex justify-center items-center gap-2 bg-white border border-gray-200 text-gray-500 font-bold py-4 rounded-2xl hover:border-british-gold hover:text-british-gold transition-all shadow-lg">
+                            <i class="fa-brands fa-instagram text-xl text-british-gold"></i> 私訊小編諮詢詳情
+                        </a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- 頁尾 (增加底部 pb-24 防止被手機版懸浮條遮擋) -->
+    <footer class="bg-british-green text-white py-16 px-6 border-t-[6px] border-british-gold text-center pb-28 md:pb-16">
+        <div class="container mx-auto max-w-6xl text-center flex flex-col items-center">
+            <!-- Logo -->
+            <img src="https://drive.google.com/thumbnail?id=1xrhrHTWGHnMbwGZFFAQPFEWaKeDDdBlQ&sz=w400" alt="Logo" class="h-16 mx-auto mb-5 opacity-90 text-center">
+            
+            <!-- 版權宣告 -->
+            <p class="text-gray-300 text-sm md:text-[15px] tracking-wider mb-8 text-center font-serif">Copyright © 2026 職場法律實戰班. All rights reserved.</p>
+
+            <!-- 社群連結資訊 -->
+            <div class="flex justify-center gap-6">
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/profile.php?id=61572494396270" target="_blank" class="w-11 h-11 rounded-full border border-british-gold flex items-center justify-center text-british-gold hover:bg-british-gold hover:text-british-green hover:-translate-y-1 transition-all duration-300 shadow-sm" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f text-lg"></i>
+                </a>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/legal._.thinking/" target="_blank" class="w-11 h-11 rounded-full border border-british-gold flex items-center justify-center text-british-gold hover:bg-british-gold hover:text-british-green hover:-translate-y-1 transition-all duration-300 shadow-sm" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram text-xl"></i>
+                </a>
+                <!-- LINE -->
+                <a href="https://lin.ee/nflY9tV" target="_blank" class="w-11 h-11 rounded-full border border-british-gold flex items-center justify-center text-british-gold hover:bg-british-gold hover:text-british-green hover:-translate-y-1 transition-all duration-300 shadow-sm" aria-label="LINE">
+                    <i class="fa-brands fa-line text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 手機版底部懸浮報名條 (Mobile Sticky CTA) -->
+    <div class="md:hidden fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 shadow-[0_-10px_30px_rgba(0,0,0,0.1)] z-[90] px-5 py-3 flex justify-between items-center" id="mobile-sticky-cta">
+        <div class="flex flex-col text-left">
+            <span class="text-[11px] text-red-600 font-black tracking-widest uppercase mb-0.5">早鳥優惠 8/4 前</span>
+            <div class="flex items-baseline gap-1">
+                <span class="text-2xl font-black text-british-green font-serif tracking-tighter">$2,200</span>
+                <span class="text-[10px] text-gray-400 line-through opacity-80">原價 $2,400</span>
+            </div>
+        </div>
+        <div class="flex flex-col items-center gap-1.5">
+            <button onclick="openRegisterModal()" class="bg-british-green text-british-gold px-6 py-2 rounded-lg font-black text-[15px] tracking-widest hover:bg-opacity-90 transition-all shadow-md active:scale-95 uppercase whitespace-nowrap">
+                立即報名
+            </button>
+            <a href="https://www.instagram.com/legal._.thinking/" target="_blank" class="px-3 py-1 border border-gray-200 rounded-md text-[11px] text-gray-500 font-bold hover:text-british-gold hover:border-british-gold bg-gray-50 transition-colors flex items-center gap-1 shadow-sm">
+                <i class="fa-brands fa-instagram"></i> 私訊小編諮詢詳情
+            </a>
+        </div>
+    </div>
+
+    <!-- [報名彈窗] -->
+    <div id="registerModal" class="fixed inset-0 z-[1000] hidden overflow-hidden" role="dialog" aria-modal="true">
+        <div class="fixed inset-0 bg-british-green/95 backdrop-blur-md" onclick="closeRegisterModal()"></div>
+        <div class="flex items-center justify-center min-h-screen p-4">
+          <div class="relative w-full max-w-3xl bg-british-cream shadow-2xl rounded-2xl border-4 border-double border-british-gold flex flex-col max-h-[90vh]">
+            
+            <!-- 固定標頭與關閉按鈕 -->
+            <div class="p-6 md:p-10 pb-0 shrink-0 text-left">
+                <button onclick="closeRegisterModal()" class="absolute top-4 right-4 text-british-green hover:text-british-gold text-xl z-[110] p-2 transition font-black"><i class="fa-solid fa-xmark"></i></button>
+                <div class="text-center mb-6">
+                    <h2 class="text-2xl font-black text-british-green mb-2 serif-title tracking-widest uppercase text-center">課程報名表</h2>
+                    <div class="w-16 h-1 bg-british-gold mx-auto mt-2"></div>
+                </div>
+            </div>
+
+            <!-- 可捲動內容區 -->
+            <div class="overflow-y-auto px-6 md:px-12 pb-12 no-scrollbar">
+                <p class="text-sm text-gray-600 font-medium leading-relaxed text-center mb-8">請填寫報名資料，小編於收到表單後 IG 私訊與您確認。</p>
+                
+                <script>var submitted = false;</script>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {handleSuccessUI();}"></iframe>
+                
+                <form id="courseForm" action="https://docs.google.com/forms/d/e/1FAIpQLScQoRrxSKHjPFLQe6noUYHSJ_LHtgkAfV9gWiV3Ujq6WPs1Cw/formResponse" method="POST" target="hidden_iframe" class="space-y-8" onsubmit="handleFormSubmit(event)">
+                    
+                    <!-- 1. 場次 (1996132441) -->
+                    <div class="space-y-4 text-left">
+                        <label class="flex items-center gap-2 text-british-green font-bold text-sm uppercase"><span class="w-1.5 h-1.5 bg-british-gold rounded-full"></span> 選擇參與場次 *</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <label class="flex items-center p-4 border-2 border-british-gold/20 bg-white rounded-xl cursor-pointer hover:border-british-gold transition">
+                                <input type="radio" name="entry.1996132441" value="台北場 8/22(六)" required class="form-radio text-british-gold h-5 w-5">
+                                <span class="ml-3 font-bold text-sm">台北 8 / 22 (六)</span>
+                            </label>
+                            <label class="flex items-center p-4 border-2 border-british-gold/20 bg-white rounded-xl cursor-pointer hover:border-british-gold transition">
+                                <input type="radio" name="entry.1996132441" value="台中場 9/12(六)" required class="form-radio text-british-gold h-5 w-5">
+                                <span class="ml-3 font-bold text-sm">台中 9 / 12 (六)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- 2. 個人資料 -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6 border-t border-dashed border-british-gold/30">
+                        <div class="space-y-1 text-left">
+                            <label class="text-xs font-bold text-british-green uppercase tracking-wider">姓名 *</label>
+                            <input type="text" name="entry.255761638" required class="w-full bg-white border border-gray-300 p-3 rounded-lg shadow-sm text-sm" placeholder="請輸入姓名">
+                        </div>
+                        <div class="space-y-1 text-left">
+                            <label class="text-xs font-bold text-british-green uppercase tracking-wider">IG 帳號 *</label>
+                            <input type="text" name="entry.1574080863" required class="w-full bg-white border border-gray-300 p-3 rounded-lg shadow-sm text-sm" placeholder="正確可搜尋帳號">
+                        </div>
+                        <div class="space-y-1 text-left">
+                            <label class="text-xs font-bold text-british-green uppercase tracking-wider">聯絡電話 *</label>
+                            <input type="tel" name="entry.922447564" required class="w-full bg-white border border-gray-300 p-3 rounded-lg shadow-sm text-sm" placeholder="09XX-XXX-XXX">
+                        </div>
+                        <div class="space-y-1 text-left">
+                            <label class="text-xs font-bold text-british-green uppercase tracking-wider">電子信箱 *</label>
+                            <input type="email" name="entry.177261986" required class="w-full bg-white border border-gray-300 p-3 rounded-lg shadow-sm text-sm" placeholder="常用信箱">
+                        </div>
+                    </div>
+
+                    <!-- 3. 職業別 (1645565300) -->
+                    <div class="pt-6 text-left">
+                        <label class="block text-british-green font-bold text-sm mb-2">職業別 (選填)</label>
+                        <div class="custom-select-wrapper">
+                            <select name="entry.1645565300" id="occupationSelect" onchange="handleOccupationChange(this, 'otherField', 'otherInput')" class="w-full bg-white border border-gray-300 p-3.5 rounded-lg text-sm font-bold appearance-none">
+                                <option value="" disabled selected>請選擇職業...</option>
+                                <option value="一般上班族">一般上班族</option>
+                                <option value="企業主／老闆">企業主／老闆</option>
+                                <option value="主管／管理職">主管／管理職</option>
+                                <option value="HR／人資">HR／人資</option>
+                                <option value="自由接案／自營者">自由接案／自營者</option>
+                                <option value="__other_option__">其他</option>
+                            </select>
+                        </div>
+                        <div id="otherField" class="hidden mt-3 text-left">
+                            <input type="text" id="otherInput" name="entry.1645565300.other_option_response" class="w-full bg-white border border-gray-300 p-3 rounded-lg text-sm italic shadow-inner" placeholder="請手動填寫職業名稱">
+                        </div>
+                    </div>
+
+                    <!-- 4. 方案與同行 (2136538033) -->
+                    <div class="space-y-4 pt-6 border-t border-dashed border-british-gold/30 text-left">
+                        <label class="flex items-center gap-2 text-british-green font-bold text-sm uppercase"><span class="w-1.5 h-1.5 bg-british-gold rounded-full"></span> 報名方案 *</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <label class="flex items-center p-4 border-2 border-british-gold/20 bg-white rounded-xl cursor-pointer hover:border-british-gold transition">
+                                <input type="radio" name="entry.2136538033" value="單人參加" checked onchange="updateParticipantCount(1)" class="form-radio text-british-gold h-5 w-5">
+                                <span class="ml-3 font-bold text-sm">單人報名</span>
+                            </label>
+                            <label class="flex items-center p-4 border-2 border-british-gold/20 bg-white rounded-xl cursor-pointer hover:border-british-gold transition">
+                                <input type="radio" name="entry.2136538033" value="有，我帶 1 位好友" onchange="updateParticipantCount(2)" class="form-radio text-british-gold h-5 w-5">
+                                <span class="ml-3 font-bold text-sm">雙人同行</span>
+                            </label>
+                        </div>
+                        
+                        <p class="text-xs text-british-gold font-bold mt-1 tracking-wider text-left">3人以上，請私訊小編協助報名</p>
+
+                        <!-- 同行友資料區塊 -->
+                        <div id="companionFields" class="hidden mt-4 p-5 bg-british-gold/5 border border-british-gold/20 rounded-xl space-y-4 text-left">
+                            <p class="text-xs font-bold text-british-green uppercase tracking-widest mb-2"><i class="fa-solid fa-user-plus mr-1"></i> 同行友人資料</p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <input type="text" id="companionName" name="entry.774849251" class="w-full bg-white border border-gray-300 p-3 rounded-lg shadow-sm text-sm" placeholder="姓名 *">
+                                <input type="tel" id="companionPhone" name="entry.304694864" class="w-full bg-white border border-gray-300 p-3 rounded-lg shadow-sm text-sm" placeholder="聯絡電話 *">
+                                <input type="email" id="companionEmail" name="entry.429320286" class="w-full bg-white border border-gray-300 p-3 rounded-lg shadow-sm text-sm" placeholder="電子信箱 *">
+                                
+                                <!-- 同行者職業別選單 -->
+                                <div class="custom-select-wrapper">
+                                    <select id="companionOccupation" name="entry.912227267" class="w-full bg-white border border-gray-300 p-3 rounded-lg shadow-sm text-sm font-bold appearance-none">
+                                        <option value="" disabled selected>同行者職業別 (選填)...</option>
+                                        <option value="一般上班族">一般上班族</option>
+                                        <option value="企業主／老闆">企業主／老闆</option>
+                                        <option value="主管／管理職">主管／管理職</option>
+                                        <option value="HR／人資">HR／人資</option>
+                                        <option value="自由接案／自營者">自由接案／自營者</option>
+                                        <option value="其他">其他</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. 提問 (1357532118) -->
+                    <div class="pt-6 border-t border-dashed border-british-gold/30 text-left">
+                        <label class="block text-british-green font-bold text-sm mb-2 text-left">想詢問的問題？</label>
+                        <textarea name="entry.1357532118" rows="3" class="question-textarea w-full bg-white border border-gray-300 px-5 py-3 rounded-lg text-sm font-bold shadow-inner outline-none text-left" placeholder="請具體說明您在職場遇到的問題或疑問..."></textarea>
+                    </div>
+
+                    <!-- 6. 發票資訊 -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-6 border-t border-dashed border-british-gold/30 text-left">
+                        <div class="space-y-1 md:col-span-2">
+                            <label class="text-xs font-bold text-british-green uppercase tracking-wider block text-left">雲端發票載具號碼</label>
+                            <input type="text" name="entry.1346471184" class="w-full bg-white border border-gray-300 p-3 rounded-lg shadow-sm text-sm" placeholder="/XXXXXXX">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-xs font-bold text-british-green uppercase tracking-wider block text-left">公司抬頭</label>
+                            <input type="text" name="entry.553837883" class="w-full bg-white border border-gray-300 p-3 rounded-lg shadow-sm text-sm" placeholder="若需開立統編請填寫抬頭">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-xs font-bold text-british-green uppercase tracking-wider block text-left">公司統一編號</label>
+                            <input type="text" name="entry.1810529089" class="w-full bg-white border border-gray-300 p-3 rounded-lg shadow-sm text-sm" placeholder="若需開立統編請填寫統編">
+                        </div>
+                    </div>
+
+                    <!-- 7. 優惠與價格 -->
+                    <div class="pt-6 border-t border-dashed border-british-gold/30 text-left">
+                        <label class="text-xs font-bold text-british-green uppercase tracking-wider mb-2 block text-left">粉絲優惠碼</label>
+                        <input type="text" id="promoCodeInput" name="entry.1016751022" class="w-full bg-white border border-gray-300 p-3 rounded-lg text-sm uppercase tracking-widest font-black" placeholder="請輸入優惠碼" oninput="updatePrice()">
+                        <p id="promoFeedback" class="text-sm font-bold mt-2 hidden transition-all text-left"></p>
+                        
+                        <div class="p-6 bg-british-green text-british-gold rounded-xl flex justify-between items-center mt-6 shadow-xl text-left">
+                            <div class="flex flex-col text-left">
+                                <span class="text-[10px] uppercase font-bold opacity-70 text-left">總計金額</span>
+                                <span id="companionInfo" class="text-xs font-medium text-left">單人參加</span>
+                            </div>
+                            <span class="text-4xl font-serif font-black text-left" id="displayFinalPrice">$2,200</span>
+                        </div>
+                    </div>
+
+                    <!-- 8. 付款方式與條款 -->
+                    <div class="space-y-4 pt-6 text-left">
+                        <div class="grid grid-cols-2 gap-3">
+                            <label class="flex items-center justify-center p-4 border-2 border-british-gold/20 bg-white rounded-xl cursor-pointer hover:border-british-gold transition">
+                                <input type="radio" name="entry.1842282085" value="銀行轉帳" required class="form-radio text-british-gold h-5 w-5">
+                                <span class="ml-2 text-sm font-black text-center">銀行轉帳</span>
+                            </label>
+                            <label class="flex items-center justify-center p-4 border-2 border-british-gold/20 bg-white rounded-xl cursor-pointer hover:border-british-gold transition">
+                                <input type="radio" name="entry.1842282085" value="LINE Pay" required class="form-radio text-british-gold h-5 w-5">
+                                <span class="ml-2 text-sm font-black text-[#06C755] text-center">LINE Pay</span>
+                            </label>
+                        </div>
+                        
+                        <div class="bg-white p-5 rounded-xl border border-british-gold/10 space-y-4 shadow-inner text-left">
+                            <label class="flex items-start gap-3 cursor-pointer text-left">
+                                <input type="checkbox" name="entry.1981735458" value="我已了解席次將依完成繳費順序保留，且完成報名後應盡速支付。" required class="mt-1 form-checkbox text-british-gold rounded-sm">
+                                <span class="text-sm font-medium text-left">了解席次依「繳費順序」保留。</span>
+                            </label>
+                            <label class="flex items-start gap-3 cursor-pointer text-left">
+                                <input type="checkbox" name="entry.1981735458" value="我已了解課程繳費後若無法參加，課程費用不可退費，但可保留作為未來折抵 Eva 老師其他「職場法律系列課程」或紅人學院課程（差額依未來課程費用補足或不退）。" required class="mt-1 form-checkbox text-british-gold rounded-sm">
+                                <span class="text-sm text-red-800 font-bold text-left">了解不可退費，可保留折抵未來課程。</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" id="submitBtn" class="w-full bg-british-green text-british-gold font-black py-6 rounded-xl shadow-lg transition active:scale-95 uppercase tracking-widest text-xl border-2 border-british-gold text-center">確認並送出報名 <i class="fa-solid fa-check ml-2"></i></button>
+                </form>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- 成功彈窗 -->
+    <div id="successModal" class="fixed inset-0 z-[1200] hidden overflow-y-auto text-center">
+        <div class="fixed inset-0 bg-british-green/90 backdrop-blur-md" onclick="closeModal()"></div>
+        <div class="flex min-h-screen items-center justify-center p-4">
+          <div class="relative bg-british-cream rounded-3xl p-10 border-4 border-double border-british-gold max-w-md w-full text-center shadow-2xl">
+            <div class="mx-auto w-16 h-16 rounded-full bg-green-50 border-2 border-british-gold flex items-center justify-center mb-6 text-center"><i class="fa-solid fa-check text-2xl text-british-green text-center"></i></div>
+            <h3 class="text-xl font-bold text-british-green serif-title mb-8 text-center">報名資料已送出</h3>
+            
+            <div class="bg-british-green/5 p-6 rounded-2xl mb-8 border border-british-gold/10 text-center">
+                <p class="text-xs font-bold text-british-green mb-1 uppercase tracking-widest opacity-60 text-center">課程費用</p>
+                <p class="text-red-700 text-5xl font-serif font-black text-center" id="modalFinalPrice">$2,200</p>
+            </div>
+            
+            <div id="bankTransferSection" class="hidden text-left bg-white border border-gray-200 p-5 md:p-6 rounded-xl mb-8 shadow-sm">
+                <p class="text-sm font-black text-british-green mb-3 border-b border-gray-100 pb-2 text-left">銀行轉帳資訊</p>
+                <div class="mb-4 text-left">
+                    <p class="text-sm text-gray-700 font-bold text-left">台新銀行 (812)</p>
+                    <p class="text-sm text-gray-700 font-bold text-left">灃禾管理顧問股份有限公司</p>
+                </div>
+                
+                <div class="flex flex-col gap-3 bg-british-gold/10 p-4 rounded-lg border border-british-gold/30">
+                    <p class="text-2xl font-mono font-black tracking-widest text-british-green text-center">20060100008723</p>
+                    <button onclick="copyBankAccount()" class="w-full bg-british-gold text-white py-3 rounded-md text-sm font-bold shadow-md active:scale-95 flex items-center justify-center gap-2 text-center">
+                        <i class="fa-regular fa-copy text-center"></i> <span id="copyText" class="text-center">點擊複製帳號</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 新增與修改：LINE Pay 付款區塊 (動態切換 QR Code 與連結) -->
+            <div id="linePaySection" class="hidden text-left bg-white border border-[#06C755]/30 p-5 md:p-6 rounded-xl mb-8 shadow-sm relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-[#06C755]"></div>
+                <p class="text-sm font-black text-[#06C755] mb-3 border-b border-gray-100 pb-2 text-left flex items-center gap-2">
+                    <i class="fa-brands fa-line text-lg"></i> LINE Pay 掃碼或點擊付款
+                </p>
+                
+                <!-- 特定金額 (2000, 2100) 顯示區塊 -->
+                <div id="linePaySpecificContainer" class="flex flex-col items-center gap-3 py-2">
+                    <!-- 使用 overflow-hidden 與 scale 來裁切雲端圖片 -->
+                    <div class="w-40 h-40 rounded-xl border-2 border-gray-100 shadow-sm mb-1 overflow-hidden flex items-center justify-center bg-white relative">
+                        <img id="linePayQrImg" src="" alt="LINE Pay 收款碼" class="absolute w-full h-full object-cover transform scale-[1.35] origin-[center_35%]">
+                    </div>
+                    
+                    <a id="linePayLinkBtn" href="#" target="_blank" class="w-full bg-[#06C755] text-white py-3.5 rounded-lg text-sm font-bold shadow-md active:scale-95 flex items-center justify-center gap-2 hover:bg-[#05b34b] transition-colors">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> 手機直接點擊前往 LINE Pay
+                    </a>
+                    <p class="text-xs text-gray-500 font-bold text-center leading-relaxed mt-2">
+                        💻 電腦版：請使用手機掃描 QR Code 付款<br>
+                        📱 手機版：可直接點擊上方綠色按鈕前往
+                    </p>
+                </div>
+
+                <!-- 非特定金額 (無折扣、雙人等) 顯示區塊 -->
+                <div id="linePayGenericMsg" class="hidden py-4 text-center bg-[#06C755]/5 rounded-lg border border-[#06C755]/20">
+                    <!-- 內容由 JS 動態填入 -->
+                </div>
+            </div>
+            
+            <p class="text-sm text-british-green font-bold mb-6 text-center leading-relaxed">📢 請於 20 分鐘內完成付款，並於 IG 私訊提供帳號後 5 碼，小編會協助確認</p>
+            <button onclick="goToInstagram()" class="w-full bg-british-green text-british-gold py-5 rounded-xl font-black shadow-lg hover:bg-british-lightGreen transition uppercase tracking-widest text-center">前往私訊對帳</button>
+          </div>
+        </div>
+    </div>
+
+    <script>
+        const basePrice = 2200;
+        let participantCount = 1;
+
+        // --- 導覽列下拉選單控制邏輯 ---
+        function toggleNavMenu() {
+            const menu = document.getElementById('nav-dropdown');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                void menu.offsetWidth; // 觸發重繪
+                menu.classList.remove('opacity-0', 'scale-95');
+                menu.classList.add('opacity-100', 'scale-100');
+            } else {
+                menu.classList.remove('opacity-100', 'scale-100');
+                menu.classList.add('opacity-0', 'scale-95');
+                setTimeout(() => { menu.classList.add('hidden'); }, 300);
+            }
+        }
+
+        document.addEventListener('click', function(event) {
+            const menu = document.getElementById('nav-dropdown');
+            const navBtn = document.querySelector('button[onclick="toggleNavMenu()"]');
+            
+            if (menu && !menu.classList.contains('hidden')) {
+                if (!menu.contains(event.target) && !navBtn.contains(event.target) && !navBtn.querySelector('i').contains(event.target)) {
+                    toggleNavMenu();
+                }
+            }
+        });
+        // ------------------------------
+
+        function openRegisterModal() { 
+            document.getElementById('registerModal').classList.remove('hidden'); 
+            document.body.style.overflow = 'hidden'; 
+            updatePrice(); 
+        }
+        function closeRegisterModal() { 
+            document.getElementById('registerModal').classList.add('hidden'); 
+            document.body.style.overflow = 'auto'; 
+        }
+        
+        function handleOccupationChange(select, fieldId, inputId) {
+            const field = document.getElementById(fieldId);
+            const input = document.getElementById(inputId);
+            if (select.value === '__other_option__') { 
+                field.classList.remove('hidden'); 
+                input.required = true; 
+            } else { 
+                field.classList.add('hidden'); 
+                input.required = false; 
+            }
+        }
+
+        function updateParticipantCount(count) {
+            participantCount = count;
+            document.getElementById('companionInfo').innerText = count === 2 ? '雙人同行' : '單人參加';
+            const compFields = document.getElementById('companionFields');
+            const cName = document.getElementById('companionName');
+            const cPhone = document.getElementById('companionPhone');
+            const cEmail = document.getElementById('companionEmail');
+            
+            if(count === 2) {
+                compFields.classList.remove('hidden');
+                if(cName) cName.required = true;
+                if(cPhone) cPhone.required = true;
+                if(cEmail) cEmail.required = true;
+            } else {
+                compFields.classList.add('hidden');
+                if(cName) cName.required = false;
+                if(cPhone) cPhone.required = false;
+                if(cEmail) cEmail.required = false;
+            }
+            updatePrice();
+        }
+
+        function updatePrice() {
+            const promoInput = document.getElementById('promoCodeInput');
+            const promo = promoInput.value.trim().toLowerCase();
+            const feedback = document.getElementById('promoFeedback');
+            let total = basePrice * participantCount;
+            
+            if (promo === 'eva-100') {
+                let discount = 100 * participantCount;
+                total -= discount;
+                feedback.innerHTML = `<i class="fa-solid fa-circle-check"></i> 優惠碼已套用！折抵 $${discount}`;
+                feedback.className = 'text-sm font-bold mt-2 text-green-600 block text-left';
+                promoInput.classList.add('border-green-500', 'bg-green-50');
+                promoInput.classList.remove('border-red-500', 'bg-red-50');
+            } else if (promo === 'eva-200') {
+                let discount = 200 * participantCount;
+                total -= discount;
+                feedback.innerHTML = `<i class="fa-solid fa-circle-check"></i> 優惠碼已套用！折抵 $${discount}`;
+                feedback.className = 'text-sm font-bold mt-2 text-green-600 block text-left';
+                promoInput.classList.add('border-green-500', 'bg-green-50');
+                promoInput.classList.remove('border-red-500', 'bg-red-50');
+            } else if (promo.length > 0) {
+                feedback.innerHTML = '<i class="fa-solid fa-circle-xmark"></i> 無效的優惠碼';
+                feedback.className = 'text-sm font-bold mt-2 text-red-600 block text-left';
+                promoInput.classList.add('border-red-500', 'bg-red-50');
+                promoInput.classList.remove('border-green-500', 'bg-green-50');
+            } else {
+                feedback.className = 'hidden';
+                promoInput.className = 'w-full bg-white border border-gray-300 p-3 rounded-lg shadow-sm text-sm uppercase tracking-widest font-black text-left';
+            }
+            
+            document.getElementById('displayFinalPrice').innerText = `$${total.toLocaleString()}`;
+            document.getElementById('modalFinalPrice').innerText = `$${total.toLocaleString()}`;
+
+            // --- LINE Pay 動態更新邏輯 ---
+            const qrImg = document.getElementById('linePayQrImg');
+            const linkBtn = document.getElementById('linePayLinkBtn');
+            const genericMsg = document.getElementById('linePayGenericMsg');
+            const specificContainer = document.getElementById('linePaySpecificContainer');
+
+            if (total === 2000) {
+                // 套用 $2000 的專屬圖片與連結
+                qrImg.src = "https://drive.google.com/thumbnail?id=1e39L2a9v5BRtKgz6sAVQZTGAeBsTupUj&sz=w400";
+                linkBtn.href = "https://qrcodepay.line.me/qr/payment/8a2LGF098lCC7TeAsUgiKt8EKhDWq%252BzDsOfZYoK074m%252FiZ92sCcaw0VSTKQvXmiP";
+                if(specificContainer) specificContainer.classList.remove('hidden');
+                if(genericMsg) genericMsg.classList.add('hidden');
+            } else if (total === 2100) {
+                // 套用 $2100 的專屬圖片與連結
+                qrImg.src = "https://drive.google.com/thumbnail?id=1cg9GsbVO2Nk_Y8cpJu3pVGki_WVr9mnT&sz=w400";
+                linkBtn.href = "https://qrcodepay.line.me/qr/payment/8a2LGF098lCC7TeAsUgiKnFdnc%252ByDWvz0XrHexWOYJnHa6wUWesVP2UeLQU3Uoup";
+                if(specificContainer) specificContainer.classList.remove('hidden');
+                if(genericMsg) genericMsg.classList.add('hidden');
+            } else if (total === 2200) {
+                // 套用 $2200 的專屬圖片與連結 (早鳥價)
+                qrImg.src = "https://drive.google.com/thumbnail?id=1-naweOCFqnUqokLH-K2fPKnhfPYjXy4k&sz=w400";
+                linkBtn.href = "https://qrcodepay.line.me/qr/payment/8a2LGF098lCC7TeAsUgiKoIW4NkMskHbRTvOiER5z1u19KMADBU9drI3Z6wqkWmo";
+                if(specificContainer) specificContainer.classList.remove('hidden');
+                if(genericMsg) genericMsg.classList.add('hidden');
+            } else if (total === 2300) {
+                // 套用 $2300 的專屬圖片與連結 (恢復原價後折 100)
+                qrImg.src = "https://drive.google.com/thumbnail?id=18_8I277tsAjjzkeDVtsiYge-P0nAck7x&sz=w400";
+                linkBtn.href = "https://qrcodepay.line.me/qr/payment/8a2LGF098lCC7TeAsUgiKv5XJdwA4UDGNIOvd2sguWtFnEJXI7cttDRvLHDx7qrx";
+                if(specificContainer) specificContainer.classList.remove('hidden');
+                if(genericMsg) genericMsg.classList.add('hidden');
+            } else {
+                // 防呆：如果總金額不是 2000, 2100, 2200 或 2300，引導去私訊小編
+                if(specificContainer) specificContainer.classList.add('hidden');
+                if(genericMsg) {
+                    genericMsg.classList.remove('hidden');
+                    genericMsg.innerHTML = `<p class="text-sm font-bold text-british-green mb-2">您的應付總額為 <span class="text-red-600 text-xl">$${total.toLocaleString()}</span></p><p class="text-xs text-gray-600 leading-relaxed font-bold">目前選擇的方案需透過專屬連結付款。<br>請點擊下方<strong class="text-british-green">「前往私訊對帳」</strong>，小編將提供對應金額的 LINE Pay 給您！</p>`;
+                }
+            }
+        }
+
+        function handleFormSubmit(e) { 
+            submitted = true; 
+            const btn = document.getElementById('submitBtn'); 
+            btn.disabled = true; 
+            btn.innerHTML = '處理中...'; 
+        }
+        
+        function handleSuccessUI() {
+            const payMethodElement = document.querySelector('input[name="entry.1842282085"]:checked');
+            const payMethod = payMethodElement ? payMethodElement.value : '銀行轉帳';
+            
+            // 根據選擇的付款方式，顯示對應的區塊
+            document.getElementById('bankTransferSection').classList.toggle('hidden', payMethod !== '銀行轉帳');
+            document.getElementById('linePaySection').classList.toggle('hidden', payMethod !== 'LINE Pay');
+            
+            document.getElementById('registerModal').classList.add('hidden');
+            document.getElementById('successModal').classList.remove('hidden');
+        }
+
+        function copyBankAccount() {
+            const accountNum = "20060100008723";
+            const tempInput = document.createElement("input");
+            tempInput.value = accountNum;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            
+            const copyText = document.getElementById('copyText');
+            copyText.innerText = '已複製!';
+            setTimeout(() => { copyText.innerText = '點擊複製帳號'; }, 2000);
+        }
+
+        function closeModal() { 
+            document.getElementById('successModal').classList.add('hidden'); 
+            document.body.style.overflow = 'auto'; 
+        }
+        
+        function goToInstagram() { 
+            window.open("https://www.instagram.com/legal._.thinking/", "_blank"); 
+        }
+
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('.icon-toggle');
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                void content.offsetWidth;
+                content.classList.remove('opacity-0');
+                content.classList.add('opacity-100');
+                if(icon) icon.classList.add('rotate-180');
+            } else {
+                content.classList.remove('opacity-100');
+                content.classList.add('opacity-0');
+                if(icon) icon.classList.remove('rotate-180');
+                setTimeout(() => { content.classList.add('hidden'); }, 300);
+            }
+        }
+
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('main-nav');
+            if (nav) {
+                if (window.scrollY > 80) nav.classList.add('bg-british-green/98');
+                else nav.classList.remove('bg-british-green/98');
+            }
+        });
+    </script>
+</body>
+</html>
